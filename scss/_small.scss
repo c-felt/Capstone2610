@@ -1,0 +1,142 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center;
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#hamburgerBtn {
+    position: relative; //parent relative, because child is absolute
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    border: 1px solid #ddd; //you can remove this to get rid of the border around the hamburger menu
+    border-radius: 10px;
+    .top, .bottom {
+        position: absolute;
+        height: 2px;
+        width: 50%;
+        left: 25%;
+        background-color: #777;
+        transition: all .3s ease;
+    }
+    .top {
+        top: 33%;
+    }
+    .bottom {
+        top: 62%;
+    }
+} //end of hamburger menu
+
+#hamburgerBtn.open {
+    .top {
+        transform: rotate(45deg);
+        top: 48%;
+        width: 60%;
+        left: 20%;
+    }
+    .bottom {
+        transform: rotate(-45deg);
+        top: 48%;
+        width: 60%;
+        left: 20%;
+    }
+} 
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    li a {
+        color: $primaryColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+    a:hover {
+        transform: translateY(5px);
+        transition: transform .20s ease-in-out;
+        color: black;
+        background-color: red;
+    }
+}
+
+nav ul.open {
+    display: block;
+} //this code here shows the "hidden" nav a links when the botton is clicked
+
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}// end main
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer

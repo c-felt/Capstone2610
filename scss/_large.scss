@@ -1,0 +1,41 @@
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {display: none;} //this gets rid of hamburger menu
+#primaryNav {display:flex; float: right;} //this puts the links in a line again
+nav {
+    padding-right: 29px;
+    ul li a {
+        border: none;
+        font-size: .85rem;
+        font-weight: $normalWeight;
+        padding: .5rem 1.2rem;
+        transition: background 0.5s linear;
+    }
+    ul li a:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+#navWrapper {
+    margin-bottom: 50px;
+    ul {
+        background-color: white;
+        box-shadow: none;
+        border: none;
+        position: inherit;
+    li.active a {
+        background-color: yellow;
+        font-weight: $normalWeight;
+        border-radius: 8px;
+        }
+    }
+}
+
+
+
+
+

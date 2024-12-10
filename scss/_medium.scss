@@ -1,0 +1,58 @@
+/* NAVIGATION STUFF GOES HERE  */
+/* --------------------------- HEADER --------------------------- */
+// #headerWrapper {}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+    }
+} // end header
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#navWrapper button::before {
+    content: "\2630";
+}
+//style for the button
+#navWrapper button {
+    border: none;
+    background:none;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#navWrapper ul {
+    position: absolute;
+    right: $gutter;
+    width: 200px; //when this number was lower it shoved the entire navigation thing to the side
+    background-color: green;
+    list-style-type: none;
+    margin: 6px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: right;
+
+    li a {
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+    }
+    li.active a {
+        background-color: white;
+        font-weight: $normalWeight;
+        border-radius: 8px;
+    }
+}
+#navWrapper ul.open {
+    display: block; /* Show the menu */
+}
