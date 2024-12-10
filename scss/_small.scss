@@ -106,11 +106,11 @@ nav ul.open {
 
 
 
-
-
-
-
 /* --------------------------- MAIN --------------------------- */
+video.hero {
+    width: 100%;
+    height: auto;
+}
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
