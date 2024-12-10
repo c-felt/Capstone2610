@@ -76,6 +76,7 @@ header {
 } 
 
 nav ul {
+    z-index: 100;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -107,10 +108,20 @@ nav ul.open {
 
 
 /* --------------------------- MAIN --------------------------- */
-video.hero {
-    width: 100%;
-    height: auto;
-}
+.hero {
+    position: relative;
+    z-index: 0;
+    div {
+        position: absolute;
+        top: 10px;
+        p {}
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+} 
+
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
