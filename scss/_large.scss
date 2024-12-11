@@ -46,13 +46,9 @@ nav {
         left:20%;
         bottom: 0;
         top: 85%;
-        // transform: translateX(-50%);
-        //new
         background-color: rgba(255, 255, 255, 0.5);
-        // padding: 10px 10px;
         margin: 0;
         border-radius: 5px;
-        // display: inline-block;
         max-width: 600px;
         overflow: hidden;
         p {
@@ -74,16 +70,12 @@ nav {
     }
 }
 
-//new
 /* CSS for loop */
 @for $i from 1 through 48 {
     $width: calc($i/ 48) * 100%;
     .large-#{$i} {flex-basis: $width;}
 }
-//end of new
 
-
-//new 2
 footer div {
     display: grid;
     grid-template-columns: auto auto auto;

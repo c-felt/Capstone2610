@@ -19,7 +19,6 @@ body {
     min-width: 320px;
 }
 
-
 /* --------------------------- HEADER --------------------------- */
 // #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
@@ -97,7 +96,7 @@ nav ul {
     // a:hover {
     //     // transform: translateY(5px);
     //     // transition: transform .20s ease-in-out;
-    // }
+    // } //get rid of this for small screens
 }
 
 nav ul.open {
@@ -113,7 +112,6 @@ nav ul.open {
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
-        //new
         background-color: rgba(255, 255, 255, 0.5);
         padding: 10px 10px;
         border-radius: 5px;
