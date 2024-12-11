@@ -230,78 +230,88 @@ main {
     margin: 50px 0 0 0;
     padding: 20px 0 0 0;
   } // end footer wrapper
-  
-  footer {
-    font-size: 0.85rem;
-    padding: 1rem $gutter;
-    color: $greyColor;
-    text-align: center;
-    line-height: $leading;
-    max-width: 960px;
-    margin: auto;
-
-    section.contactInformation {
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-      p {
-        font-size: 1rem;
-        margin: 0.3rem;
-      }
-      ion-icon {
+    .tel a {
         color: white;
-        padding-right: 8px;
-      }
-      a {
         text-decoration: none;
-        font-weight: $normalWeight;
-      }
+        font-size: 1rem;
+        transition: transform .20s ease-in-out, color .20s ease-in-out;;
     }
+    .tel a:hover {
+        transform: translateY(10px);
+        // transition: transform .20s ease-in-out;
+        color: #b23f61;
+    }
+    footer {
+        font-size: 0.85rem;
+        padding: 1rem $gutter;
+        color: $greyColor;
+        text-align: center;
+        line-height: $leading;
+        max-width: 960px;
+        margin: auto;
 
-    section.contactInformation2 {
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        section.contactInformation {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         p {
-          font-size: 1rem;
-          margin: 0.3rem;
+            font-size: 1rem;
+            margin: 0.3rem;
         }
         ion-icon {
-          color: white;
-          padding-right: 8px;
+            color: white;
+            padding-right: 8px;
         }
         a {
-          text-decoration: none;
-          font-weight: $normalWeight;
+            text-decoration: none;
+            font-weight: $normalWeight;
         }
-      }
+        }
 
-      section.contactInformation3 {
-        p {
-          font-size: 1rem;
-          margin: 0.3rem;
+        section.contactInformation2 {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            p {
+            font-size: 1rem;
+            margin: 0.3rem;
+            }
+            ion-icon {
+            color: white;
+            padding-right: 8px;
+            }
+            a {
+            text-decoration: none;
+            font-weight: $normalWeight;
+            }
         }
-        ion-icon {
-          color: white;
-          padding-right: 8px;
+
+        section.contactInformation3 {
+            p {
+            font-size: 1rem;
+            margin: 0.3rem;
+            }
+            ion-icon {
+            color: white;
+            padding-right: 8px;
+            }
+            a {
+            text-decoration: none;
+            font-weight: $normalWeight;
+            }
+        }
+        
+        section.location {
+        font-size: 1rem;
         }
         a {
-          text-decoration: none;
-          font-weight: $normalWeight;
+        color: $greyColor;
         }
-      }
-      
-    section.location {
-      font-size: 1rem;
-    }
-    a {
-      color: $greyColor;
-    }
-    p.legal {
-      margin: 0;
-      font-size: 0.9rem;
-      text-align: center;
-      padding-top: 10px;
-    }
-    .border {
-        border-top: 2px solid rgba(255, 255, 255, 0.5);
-        width: 70%;
-        margin: 0 auto;
-    }
-  } // end footer
+        p.legal {
+        margin: 0;
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 10px;
+        }
+        .border {
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            width: 70%;
+            margin: 0 auto;
+        }
+    } // end footer
