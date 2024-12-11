@@ -1,6 +1,4 @@
-/* NAVIGATION STUFF GOES HERE  */
 /* --------------------------- HEADER --------------------------- */
-// #headerWrapper {}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -12,6 +10,7 @@ header {
         font-weight: $lightWeight;
     }
 } // end header
+
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 #navWrapper button::before {
     content: "\2630";
@@ -56,3 +55,25 @@ header {
 #navWrapper ul.open {
     display: block; /* Show the menu */
 }
+
+/* --------------------------- MAIN --------------------------- */
+.hero {
+    position: relative;
+    z-index: 0;
+    div {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        p {
+            text-shadow: 2px 2px 2px #000;
+            color: white; 
+            font-size: 2rem;
+            margin:0;
+        }
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+} 
