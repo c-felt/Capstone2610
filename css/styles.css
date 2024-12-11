@@ -610,6 +610,7 @@ footer section.contactInformation ion-icon {
 footer section.contactInformation a {
   text-decoration: none;
   font-weight: 500;
+  color: white;
 }
 footer section.contactInformation2 {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -625,6 +626,7 @@ footer section.contactInformation2 ion-icon {
 footer section.contactInformation2 a {
   text-decoration: none;
   font-weight: 500;
+  color: white;
 }
 footer section.contactInformation3 p {
   font-size: 1rem;
@@ -637,6 +639,7 @@ footer section.contactInformation3 ion-icon {
 footer section.contactInformation3 a {
   text-decoration: none;
   font-weight: 500;
+  color: white;
 }
 footer section.location {
   font-size: 1rem;
