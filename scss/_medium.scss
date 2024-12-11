@@ -32,10 +32,10 @@ header {
     position: absolute;
     right: $gutter;
     width: 200px; //when this number was lower it shoved the entire navigation thing to the side
-    background-color: green;
+    background-color: white;
     list-style-type: none;
     margin: 6px;
-    padding: 0;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px #aaa;
@@ -48,12 +48,19 @@ header {
     }
     li.active a {
         background-color: white;
-        font-weight: $normalWeight;
-        border-radius: 8px;
+    }
+    li.active:hover a{
+        background-color: rgba(178,63,97,0.5);;
+    }
+    a:hover {
+        transform: translateY(5px);
+        transition: transform .20s ease-in-out;
+        color: white;
+        background-color: rgba(178,63,97,0.5);
     }
 }
 #navWrapper ul.open {
-    display: block; /* Show the menu */
+    display: block;
 }
 
 /* --------------------------- MAIN --------------------------- */
@@ -85,15 +92,10 @@ header {
         height: auto;
     }
 }
-
-//new
 @for $i from 1 through 24 {
     $width: calc($i/ 24) * 100%;
     .medium-#{$i} {flex-basis: $width;}
 }
-//end of new
-
-//new 2
 footer div {
     display: grid;
     grid-template-columns: auto auto auto;

@@ -21,7 +21,7 @@ body {
 
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {border-bottom: 1px solid $greyColor;}
+// #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -89,23 +89,17 @@ nav ul {
         border-bottom: 1px solid $greyColor;
     }
     li.active a {
-        color: $secondaryColor;
+        color: #b23f61;
     }
     a:hover {
-        transform: translateY(5px);
-        transition: transform .20s ease-in-out;
-        color: black;
-        background-color: red;
+        // transform: translateY(5px);
+        // transition: transform .20s ease-in-out;
     }
 }
 
 nav ul.open {
     display: block;
 } //this code here shows the "hidden" nav a links when the botton is clicked
-
-
-
-
 
 /* --------------------------- MAIN --------------------------- */
 .hero {
@@ -160,21 +154,21 @@ main {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 100px;
-        background-color: red;
+        background-color: #eeeeee;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         h2 {
-            background-color: red;
+            background-color: #b23f61;
             margin: 0;
             padding: 5px;
-            border: 4px solid red;
+            border: 4px solid #b23f61;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
         ul {
-            background-color: red;
+            background-color: #eeeeee;
             margin: 0;
             padding: 30px;
             border-bottom-left-radius: 10px;
@@ -230,9 +224,9 @@ main {
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: $primaryColor;
-    // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
-    // margin: 50px 0 0 0;
-    // padding: 20px 0 0 0;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    margin: 50px 0 0 0;
+    padding: 20px 0 0 0;
   } // end footer wrapper
   
   footer {

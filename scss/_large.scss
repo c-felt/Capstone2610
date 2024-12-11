@@ -7,17 +7,18 @@ header, nav, main {
 #hamburgerBtn {display: none;} //this gets rid of hamburger menu
 #primaryNav {display:flex; float: right;} //this puts the links in a line again
 nav {
-    padding-right: 29px;
+    padding-right: 60px;
     ul li a {
         border: none;
         font-size: .85rem;
         font-weight: $normalWeight;
         padding: .5rem 1.2rem;
+        margin: .1rem;
         transition: background 0.5s linear;
     }
     ul li a:hover {
-        background-color: $primaryColor;
-        color: white;
+        color:#b23f61;
+        background-color: none;
     }
 }
 #navWrapper {
@@ -28,9 +29,11 @@ nav {
         border: none;
         position: inherit;
     li.active a {
-        background-color: yellow;
+        color:#b23f61;
         font-weight: $normalWeight;
-        border-radius: 8px;
+        }
+        li.active:hover a {
+            color: white;
         }
     }
 }
