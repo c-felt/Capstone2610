@@ -99,12 +99,15 @@ header {
 footer div {
     display: grid;
     grid-template-columns: auto auto auto;
-    align-items: center;
+    // align-items: center;
     .contactInformation {
         border-bottom: none;
     }
     .contactInformation2{
         border-bottom: none;
+    }
+    .border {
+        border-top: none;
     }
     
 }
