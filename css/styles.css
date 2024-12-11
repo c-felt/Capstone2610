@@ -863,10 +863,6 @@ footer .border {
     margin: 0.1rem;
     transition: background 0.5s linear;
   }
-  nav ul li a:hover {
-    color: #b23f61;
-    background-color: none;
-  }
   #navWrapper {
     margin-bottom: 50px;
   }
