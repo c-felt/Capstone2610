@@ -187,16 +187,118 @@ main {
     }
 }
 
+//new
+/* --------------------------- CSS for rows --------------------------- */
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0 8px;
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
+/* --------------------------- CSS for columns --------------------------- */
+.column {
+    padding: 0 8px;
+    margin: 8px 0;
+    // flex: 1;
+}
+/* --------------------------- CSS for loop --------------------------- */
+@for $i from 1 through 15 {
+    $width: calc($i/ 15) * 100%;
+    .small-#{$i} {flex-basis: $width;}
+}
+//end of new
+
+/* --------------------------- FOOTER --------------------------- */
+// #footerWrapper {
+//     background-color: $primaryColor
+// } // end footer wrapper
+
+// footer {
+//     font-size: .85rem;
+//     padding: 1rem $gutter;
+//     color: $greyColor;
+//     text-align: center;
+//     line-height: $leading;
+//     a {color: $greyColor;}
+// }// end footer
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: $primaryColor
-} // end footer wrapper
-
-footer {
-    font-size: .85rem;
+    background-color: $primaryColor;
+    // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    // margin: 50px 0 0 0;
+    // padding: 20px 0 0 0;
+  } // end footer wrapper
+  
+  footer {
+    font-size: 0.85rem;
     padding: 1rem $gutter;
     color: $greyColor;
     text-align: center;
     line-height: $leading;
-    a {color: $greyColor;}
-}// end footer
+    section.contactInformation {
+        border-bottom: 2px solid white;
+      p {
+        font-size: 1rem;
+        margin: 0.6rem;
+      }
+      ion-icon {
+        color: white;
+        padding-right: 8px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    section.contactInformation2 {
+        border-bottom: 2px solid red;
+        margin: 7px 0 7px 0;
+    }
+
+    section.contactInformation2 {
+        p {
+          font-size: 1rem;
+          margin: 0.6rem;
+        }
+        ion-icon {
+          color: white;
+          padding-right: 8px;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+
+    // section.socialMedia {
+    //   display: flex;
+    //   justify-content: center;
+  
+    //   a {
+    //     display: block;
+    //     font-size: 2rem;
+    //     margin: 0.5rem;
+    //     padding: 0.5rem;
+    //     color: white;
+    //     transition: transform 1s ease;
+    //     &:hover {
+    //       transform: translateY(5px);
+    //     }
+    //   }
+    // }
+    section.location {
+      font-size: 1rem;
+    }
+    a {
+      color: $greyColor;
+    }
+    p.legal {
+      margin: 0;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  } // end footer

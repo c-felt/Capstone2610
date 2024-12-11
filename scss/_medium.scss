@@ -77,3 +77,32 @@ header {
         height: auto;
     }
 } 
+
+/* --------------------------- CSS for rows --------------------------- */
+.row {
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+//new
+@for $i from 1 through 24 {
+    $width: calc($i/ 24) * 100%;
+    .medium-#{$i} {flex-basis: $width;}
+}
+//end of new
+
+//new 2
+footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    .contactInformation {
+        border-bottom: none;
+    }
+    .contactInformation2{
+        border-bottom: none;
+    }
+    
+}
